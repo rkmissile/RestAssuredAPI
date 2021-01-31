@@ -1,14 +1,15 @@
 package com.pnt.api.get;
 
+import com.pnt.api.extentreport.ExtentReportGenerator;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class DemoGetStatic {
+public class DemoGetStatic extends ExtentReportGenerator {
 
-    @Test
+    @Test(enabled = false)
     public void testSingleUser() {
 
         baseURI = "https://reqres.in";
