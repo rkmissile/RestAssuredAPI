@@ -1,5 +1,6 @@
 package com.pnt.api.post;
 
+import com.pnt.api.extentreport.ExtentReportGenerator;
 import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
@@ -7,7 +8,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-public class DemoPostStatic {
+public class DemoPostStatic extends ExtentReportGenerator {
 
     @Test
     public void testPost() {

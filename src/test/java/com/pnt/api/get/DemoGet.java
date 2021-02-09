@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DemoGet {
+public class DemoGet  {
 
     @Test
     public void test01() {
